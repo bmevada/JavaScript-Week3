@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
 </head>
 <body>
-    <h1style="text-align:center">Random Password Generator</h1>
-    <input type="passwordtext" placeholder="Generate Password" id="password">
-    <div id="button">Generate Random Password</div>
+    <h1 style="text-align:center">Random Password Generator</h1>
+    <input type="passwordtext" placeholder="Generate-Password" id="password">
+    <div id="button" userclick="newpassword();">Generate Random Password</div>
+   
+        
+
+
+            document.getElementById("password").value = password
+        }
+        
+
+    
 </body>
 </html>
