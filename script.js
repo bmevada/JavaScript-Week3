@@ -16,6 +16,6 @@ function newpassword(){
     }
 
     //Display password in textbox
-    document.getElementById("displaypassword").value = password;
-    
+    document.getElementById("Generate-Password").value = password;
+
 }
