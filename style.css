@@ -47,7 +47,7 @@ html, body
 
 }
 
-.inputbox Generate-Password
+.inputbox .displaypassword
 {
     letter-spacing: 2px;
 }

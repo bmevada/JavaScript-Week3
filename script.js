@@ -6,7 +6,8 @@ function newpassword(){
 
     //Set the length and possible values of the password
     var charset = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`~!@#$%^&*()_+=-{}:<>?[];',./";
-    var passwordlength = 84;
+    min passwordlength = 8;
+    max passwordlength = 128
     var password = " ";
 
     //Create random password characters
