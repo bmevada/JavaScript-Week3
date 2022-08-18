@@ -14,13 +14,13 @@ SO THAT I can create a strong password that provides greater security
 
 ## Deployed Website
 
-[Link to Github] https://github.com/bmevada/JavaScript-Week3.git
+[Link to Github] (https://github.com/bmevada/JavaScript-Week3.git)
 
 [Link to Website] https://bmevada.github.io/JavaScript-Week3
 
 The Password Generator includes Heading, a read only password generated text, and a Generate Password button.
 
-<link rel="Final Look" href="Password Generator Mock up-image.png">
+<img src= '.images/Password Generator Mock up-image.png'>
 
 ## Acceptance Criteria
 
@@ -30,27 +30,27 @@ THEN the user is presented with a series of prompts for the desired password cri
 
 THEN the user will be required to enter the number of characters desired for their website - required input is between 8 to 128 charcters.
 
-<link rel="Number of characters" href=".images/Password Length.png">
+(.images/Password Length.png)
 
 IF the number of characters is selected is not between 8 to 128 characters, the user will be prompted that the number of characters required for the random password generator is between 8 to 128.
 
-<link rel="Character Error" href=".images/Character Error.png">
+<img src='.images/Character Error.png'>
 
 THEN the user will confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
 WHEN the user will answer each prompt
 THEN the user's input should be validated and at least one character type should be selected
 
-<link rel="Lowercase Characters" href=".images/Lowercase.png">
-<link rel="Uppercase Characters" href=".images/Numeric.png">
-<link rel="Special Characters" href=".images/Symbols.png">
-<link rel="Numberical Characters" href=".images/Numeric.png">
+<img src='.images/Lowercase.png'>
+<img src='.images/Numeric.png'>
+<img src='.images/Symbols.png'>
+<img src='.images/Numeric.png'>
 
 WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is written to the page
 
-<link rel="Output - Random Password" href=".images/Password Generated.png">
+<img src= '.images/Generated Password.png>
 
 
 
