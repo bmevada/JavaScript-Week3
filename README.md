@@ -30,7 +30,7 @@ THEN the user is presented with a series of prompts for the desired password cri
 
 THEN the user will be required to enter the number of characters desired for their website - required input is between 8 to 128 charcters.
 
-(.images/Password Length.png)
+<img src='./images/Password Length.png'>
 
 IF the number of characters is selected is not between 8 to 128 characters, the user will be prompted that the number of characters required for the random password generator is between 8 to 128.
 
