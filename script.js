@@ -1,27 +1,23 @@
 // Generate a random password
-function newpassword() 
+function newpassword(event){
+    event.preventDefault()
+ var passwordCharSet = ""
   
 //Prompt usert for password length and complexity
-document.getElementById("Generate-Password").value = password
 
-var length = Number(prompt("Enter a password length between 8 and 128"));
-        charType = prompt("Enter a character type: special, numeric, uppercase, lowercase");
-        password = Generate-Password();
-        document.getElementById("displaypassword").value = password;
     
         var password_strings = {
         lowercase: 'abcdefghijklmnopqrstuvwxyz',
         uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
         numeric: '0123456789',
-        special: " !"@$%#\'()*+,-./:;<=>?@[]^_`{|}~"
+        special: " !@$%#\'()*+,-./:;<=>?@[]^_`{|}~"
         };
 
-    // var passwordlength = 7;
-    // var minPasswordLength = 8;
-    // var maxPasswordLength = 128;
-    // var password = " ";
-
     var length = window.prompt("Enter a password length between 8 and 128");
+    if (parseInt(length)>128||parseInt(length)<8) {
+        alert("Password should be betweem 8 to 128 characters")
+        newpassword()
+    }
 
     var lowercase = window.confirm("Do you want the password to include lowercase letters?");
     if (lowercase) {
@@ -35,22 +31,26 @@ var length = Number(prompt("Enter a password length between 8 and 128"));
   
     var symbols = window.confirm("Do you want the password to include symbols?");
     if (symbols) {
-      passwordCharSet += password_strings.symbol;
+      passwordCharSet += password_strings.special;
     };
   
     var numbers = window.confirm("Do you want the password to include numbers?");
     if (numbers) {
-      passwordCharSet += password_strings.number;
+      passwordCharSet += password_strings.numeric;
     };
 
-    //Create random password characters
-    for (var i=0; i<passwordlength; i++){
-        var randomvalue = charset(Math.floor(Math.random) * Math.floor);
-        password +=chars.substring(randomvalue, randomvalue+1);
+    var randompassword = ""
+    console.log(passwordCharSet)
+    //Populate random password with the above characters
+    for (var i = 0; i<length; i++) {
+        randompassword+=passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)]
+        // randompassword+= passwordCharSet[(Math.floor(Math.random) * passwordCharSet.length)];
+        // password += passwordCharSet.substring(randompassword, randompassword+1);
     }
+console.log(randompassword)
 
     //Display password in textbox
-    document.getElementById("Generate-Password").value = password;
-
+    document.getElementById("Generate-Password").value = randompassword;
+}
 
 document.getElementById("btn").addEventListener("click", newpassword)
