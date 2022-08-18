@@ -20,7 +20,7 @@ SO THAT I can create a strong password that provides greater security
 
 The Password Generator includes Heading, a read only password generated text, and a Generate Password button.
 
-<img src= '.images/Password Generator Mock up-image.png'>
+<img src='./images/Password Generator Mock up-image.png'>
 
 ## Acceptance Criteria
 
@@ -40,17 +40,19 @@ THEN the user will confirm whether or not to include lowercase, uppercase, numer
 WHEN the user will answer each prompt
 THEN the user's input should be validated and at least one character type should be selected
 
-<img src='.images/Lowercase.png'>
-<img src='.images/Numeric.png'>
-<img src='.images/Symbols.png'>
-<img src='.images/Numeric.png'>
+<img src='./images/Lowercase.png'>
+
+<img src='./images/Uppercase.png'>
+
+<img src='./images/Symbols.png'>
+<img src='./images/Numeric.png'>
 
 WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is written to the page
 
-<img src= '.images/Generated Password.png>
+<img src='./images/Generated Password.png'>
 
 
 
