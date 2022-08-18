@@ -34,7 +34,7 @@ THEN the user will be required to enter the number of characters desired for the
 
 IF the number of characters is selected is not between 8 to 128 characters, the user will be prompted that the number of characters required for the random password generator is between 8 to 128.
 
-<img src='.images/Character Error.png'>
+<img src='./images/Character Error.png'>
 
 THEN the user will confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
 WHEN the user will answer each prompt
