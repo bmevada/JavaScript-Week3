@@ -40,7 +40,7 @@ function newpassword(event){
     };
 
     var randompassword = ""
-    console.log(passwordCharSet)
+    // console.log(passwordCharSet)
     //Populate random password with the above characters
     for (var i = 0; i<length; i++) {
         randompassword+=passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)]
